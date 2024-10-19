@@ -41,7 +41,6 @@ img {
 .testimonials-heading {
   color: #6466eb;  /* Change color to blue */
   font-size: 48px; /* Larger font size */
-  text-align: left; /* Align the heading to the left */
   font-weight: bold;
   margin-left: 10px;
 }
@@ -50,7 +49,8 @@ img {
 @media (max-width: 768px) {
   .testimonials-heading {
     font-size: 48px; /* Adjust font size for smaller screens */
-    margin-left: 5px;
+    margin-left: 20px;
+    text-align: left;
   }
 }
 /* SHUBHAM BURDE ---- END TESTOMONIAL TEXT */
@@ -762,4 +762,68 @@ tr:hover {
 
 .certificates-card a {
   color: black; /* Ensure links are readable on the card */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .card-body h3 {
+      font-size: 1.5rem; /* Reduce header size for smaller screens */
+  }
+
+  .card-body h6 {
+      font-size: 1rem; /* Adjust subheader size */
+  }
+
+  .card {
+      padding: 10px; /* Reduce padding for small screens */
+      width: 50%;
+  }
+
+  .margin-left-custom {
+    margin-left: 7px; /* Adjust this as needed */
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-body h3 {
+      font-size: 1.75rem; /* Slightly smaller header for tablets */
+  }
+
+  .card-body h6 {
+      font-size: 1.1rem; /* Adjust subheader size for tablets */
+  }
+
+  .card {
+      padding: 15px; /* Adjust padding for tablets */
+      width: 100%; /* Ensure the card stays responsive */
+      margin-right: auto; /* Center horizontally */
+  }
+
+  /* Custom margin-left only applied to the card */
+  .margin-left-custom {
+      margin-left: 15px;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-body h3 {
+      font-size: 2rem; /* Default header size for large screens */
+  }
+
+  .card-body h6 {
+      font-size: 1.2rem; /* Default subheader size for large screens */
+  }
+
+  .card {
+      padding: 20px; /* Default padding for large screens */
+  }
+
+  .margin-left-custom {
+    margin-left: 20px; /* Adjust this as needed */
+  }
 }
